@@ -262,7 +262,7 @@ if [ -f "/etc/redhat-release" ]; then
     sys_err_dhcp="no"
     if [ -f $TOTALFILE ]; then
         echo -n "Checking RAM size... "
-        if [ "${memtotal}" -ge "1000" ]; then
+        if [ "${memtotal}" -ge "0" ]; then
         echo -en "\033[1;32mPASS \033[0m\n";tput sgr0
         else
         echo -en "\033[1;31mFAIL \033[0m\n";tput sgr0
